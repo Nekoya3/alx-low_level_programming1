@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - program that prints all possible different combinations of three digits
+ * main - Prints 3 combination of numbers
  * Numbers must be separated by ,, followed by a space
  * The three digits must be different
  *
