@@ -1,1 +1,1 @@
-This program will assign a random number to the variable n each time it is executed. Complete the source code in order to print whether the number stored in the variable n is positive or negative
+Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
