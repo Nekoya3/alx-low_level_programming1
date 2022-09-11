@@ -4,29 +4,33 @@
  * main - program that prints all possible different combinations of two digits
  * Numbers must be separated by ,, followed by a space
  * The two digits must be different
- * 01 and 10 are considered the same combination of the two digits 0 and 1
- *
- *Return: 0
+ * 
+ * Return: Always (Success)
  */
-
 int main(void)
 {
-int n1 = 48;
-int n2;
-int com = 44;
-while (n1 <= 57)
+int c, i;
+
+for (c = '0'; c <= '9'; c++)
 {
-n2 = n1 + 1;
-while (n2 <= 57)
+for (i = '0'; i <= '9'; i++)
 {
-putchar(com);
-putchar(32);
+if (c < i)
+{
+putchar(c);
+putchar(i);
+
+if (c != '8' || (c == '8' && i != '9'))
+{
+putchar(',');
+putchar(' ');
 }
-n2 += 1;
 }
-n1 += 1;
 }
+}
+
 putchar('\n');
+
 return (0);
 }
 
