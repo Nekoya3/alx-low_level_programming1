@@ -1,1 +1,1 @@
-Write a program that prints the lowercase alphabet in reverse, followed by a new line.
+Write a program that prints all possible combinations of single-digit numbers.
