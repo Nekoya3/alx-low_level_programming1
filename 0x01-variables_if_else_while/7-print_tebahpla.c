@@ -2,7 +2,8 @@
 
 /**
  * main - Prints the alphabet at reverse
- *
+ * You can only use the putchar function
+ * Return: 0
  */
 int main(void)
 {
