@@ -1,50 +1,17 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * print_times_table - Prints a multiplication table up to param
- * @n: The number to be treated
- *
- * Return: Number matrix
+ * main - computes and prints the sum of all the multiples of
+ * 3 or 5 below 1024.
+ * Return: Nothing.
  */
-void print_times_table(int n)
-{
-	int x, y, z;
 
-	if (n >= 0 && n <= 14)
-	{
-		for (x = 0; x <= n; x++)
-		{
-			for (y = 0; y <= n; y++)
-			{
-				z = x * y;
-				if (z > 99)
-				{
-					_putchar(',');
-					_putchar(32);
-					_putchar((z / 100) + '0');
-					_putchar(((z / 10) % 10) + '0');
-					_putchar((z % 10) + '0');
-				}
-				else if (z > 9)
-				{
-					_putchar(',');
-					_putchar(32);
-					_putchar(32);
-					_putchar(((z / 10) % 10) + '0');
-					_putchar((z % 10) + '0');
-				}
-				else
-				{
-					if (y != 0)
-					{
-						_putchar(',');
-						_putchar(32);
-						_putchar(32);
-						_putchar(32);
-					}
-					_putchar(z + '0');
-				}
-			}
-			_putchar('\n');
-		}
-	}
+int main(void)
+{
+	int i, res;
+
+	for (i = 0; i < 1024; i++)
+		if (i % 3 == 0 || i % 5 == 0)
+			res += i;
+	printf("%d\n", res);
+	return (0);
+}
