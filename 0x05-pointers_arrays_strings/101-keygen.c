@@ -3,21 +3,22 @@
 #include <time.h>
 
 /**
- * main - generates random passwords for 101-crackme
- * Return: zero
+ * main - entry point generates a random password
+ *
+ * Return: the generated password
  */
 int main(void)
 {
-	int sum;
 	char c;
+	int x;
 
-	srand(time(NULL));
-	while (sum <= 2645)
+	srand(time(0));
+	while (x <= 2645)
 	{
 		c = rand() % 128;
-		sum += c;
+		x += c;
 		putchar(c);
 	}
-	putchar(2772 - sum);
+	putchar(2772 - x);
 	return (0);
 }
